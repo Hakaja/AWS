@@ -240,5 +240,21 @@ Eine AWS-Region ist ein Cluster von Rechenzentren in einem bestimmten geografisc
 
 Jede AWS-Region umfasst mehrere AZs. Allerdings ist jede AZ auf eine bestimmte AWS-Region beschränkt. Sie können mehrere AZs innerhalb einer Region verwenden, Sie können jedoch nicht dieselbe AZ in mehreren Regionen verwenden.  
   
+
+# Erstellen einer Web-App von Grund auf mit Python Flask und MySQL
+
+[mehr Anzeigen](https://code.tutsplus.com/de/tutorials/creating-a-web-app-from-scratch-using-python-flask-and-mysql--cms-22972)  
+
+[Common Ports](https://i.pinimg.com/originals/1c/d4/49/1cd4491e5b740801b9452484ce0d8f04.jpg)  
+
+[Docker](https://hub.docker.com/_/wordpress)  
+  
+## Python  
+
+[unittest - Unit Testing Framework](https://docs.python.org/3/library/unittest.html)  
+  
+[Erste Schritte beim Testen in Python](https://realpython.com/python-testing/)  
+  
+[Developer Roadmaps](https://roadmap.sh/)
 ---  
 Paula Menski
