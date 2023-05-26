@@ -229,6 +229,19 @@ eine VPC, ein öffentliches Subnetz, ein privates Subnetz, ein NAT-Gateway, eine
 
 /home = was ihr möchtet / den Rest der Partition  
   
+[]()  
+  
+Master Boot Record (MBR)
+1) Festplate --> 200GB
+
+C: 100GB >> Windows (Erste Primäre Partition) 
+/boot = 512 MB (zweite Partition)
+/swap = 4GB (dritte Partition)
+/ = 50GB 
+/home = rest der Festplatte  
+  
+GPT Partitionierung
+
 ## Was ist eine AWS Availability Zone?  
 
 [mehr Anzeigen](https://www.techtarget.com/searchcloudcomputing/tip/Understand-AWS-Regions-vs-Availability-Zones)    
@@ -249,12 +262,17 @@ Jede AWS-Region umfasst mehrere AZs. Allerdings ist jede AZ auf eine bestimmte A
 
 [Docker](https://hub.docker.com/_/wordpress)  
   
-## Python  
+## Software testing Python  
 
 [unittest - Unit Testing Framework](https://docs.python.org/3/library/unittest.html)  
   
 [Erste Schritte beim Testen in Python](https://realpython.com/python-testing/)  
   
+# Tutorial zur Erstellung einer Python-Flask-Anwendung mit AWS Cloud9:
+  
+[Wie man eine einfache Flask-App in nur 5 Minuten erstellt | Python Flask Tutorial für Anfänger](https://www.youtube.com/watch?v=6M3LzGmIAso)  
+[Erstellen einer Python-Flask-Anwendung mit AWS Cloud9 | Wie man Flask in AWS Cloud9 erstellt | S3 CloudHub](https://www.youtube.com/watch?v=0irsbYywM_U)  
+
 [Developer Roadmaps](https://roadmap.sh/)
 ---  
 Paula Menski
