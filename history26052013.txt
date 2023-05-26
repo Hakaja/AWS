@@ -1,0 +1,337 @@
+    1  mkdir Praktikum && cd Praktikum
+    2  aws ec2 describe-images
+    3  which git 
+    4  git --version
+    5  touch README.md
+    6      git config --global user.name "Mary Major"
+    7      git config --global user.name "Paula Menski"
+    8      git config --global user.email "paula.menski@disroot.com"
+    9  cd Praktikum/
+   10      git config --global user.name "Paula Menski"
+   11      git config --global user.email "paula.menski@disroot.com"
+   12  git config --global credential.helper '!aws codecommit credential-helper $@'
+   13  git config --global credential.UseHttpPath true
+   14  git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/Praktikum-Paula
+   15  cd Praktikum-Paula/
+   16  cd ..
+   17  mv README.md Praktikum-Paula/
+   18  ls
+   19  cd Praktikum-Paula/
+   20  ls -lah
+   21  git status
+   22  git add READ.md
+   23  git add README.md
+   24  git add READ.md
+   25  git status
+   26  git commit -m "Erstes Commit"
+   27  git status
+   28  git push
+   29  cd ..
+   30  ls -lah
+   31  cd Praktikum-Paula/
+   32  git log
+   33  git remote add origin
+   34  git push
+   35  cd
+   36  cd environment/Praktikum/Praktikum-Paula/
+   37  git add -Add
+   38  git commit -m "Dokumentation bearbeitet"
+   39  git push
+   40  git add README.md
+   41  git commit -m "Dokumentation bearbeitet"
+   42  git push
+   43  git add README.md
+   44  git commit -m "Dokumentation bearbeitet"
+   45  git push
+   46  git add README.md
+   47  git commit -m "Dokumentation bearbeitet"
+   48  git push
+   49  history
+   50  cd Praktikum/
+   51  cd Praktikum-Paula/
+   52  git add README.md
+   53  git commit -m "Dokumentation bearbeitet"
+   54  git push
+   55  cd ..
+   56  git add README.md
+   57  cd Praktikum-Paula/
+   58  cd Praktikum/
+   59  cd Praktikum-Paula/
+   60  git add README.md
+   61  git commit -m "Dokumentation bearbeitet"
+   62  git push
+   63  cd
+   64  cd environment/
+   65  cd Praktikum/
+   66  cd Praktikum-Paula/
+   67   aws ec2 create-key-pair --key-name MyTestKey --query 'KeyMaterial' --output text | out-file -encoding ascii -filepath MyTestKey.pem
+   68  aws ec2 create-key-pair --key-name MyTestKey --query 'KeyMaterial' --output text | out-file -encoding ascii -filepath MyTestKey.pem
+   69  aws ec2 create-key-pair --key-name MyTestKey --query 'KeyMaterial' --output text | out-file -encoding ascii -filepath MyTestKey1.pem
+   70  [08:55] Renato Palavecino
+   71  aws ec2 create-key-pair --key-name MyTestKey --query 'KeyMaterial' --output text > MyTestKey.pem
+   72  [08:55] Renato Palavecino
+   73  aws ec2 create-key-pair --key-name MyTestKey --query 'KeyMaterial' --output text > MyTestKey.pem
+   74  aws ec2 describe-key-pairs | grep MyTestKey
+   75  aws ec2 describe-key-pairs 
+   76  aws ec2 create-key-pair --key-name Nginx-Paula --query 'KeyMaterial' --output text > Nginx-Paula.pem
+   77  aws ec2 describe-key-pairs 
+   78  aws ec2 describe-key-pairs  --key-name Nginx-Paula
+   79  aws ec2 create-security-group --group-name paux-sg --description "Sicherheitsgruppe fuer EC2Nginx"
+   80  aws ec2 authorize-security-group-ingress --group-id sg-016907f268702a19b --protocol tcp --port 80 --cidr 0.0.0.0/0
+   81  aws ec2 authorize-security-group-ingress --group-id sg-016907f268702a19b --protocol tcp --port 22 --cidr 0.0.0.0/0
+   82  aws ec2 describe-security-groups --group-ids sg-016907f268702a19b
+   83  touch nginxscript.sh
+   84  aws ec2 run-instances --image-id ami-0ec7f9846da6b0f61 --count 1 --instance-type t2.micro --key-name Nginx-Paula --security-groups paux-sg --user-data file://nginxscript.sh
+   85  ssh -i Nginx-Paula.pem ubuntu@18.196.193.125
+   86  ls -lah Nginx-Paula.pem 
+   87  chmod 400 Nginx-Paula.pem 
+   88  ls -lah Nginx-Paula.pem 
+   89  ssh -i Nginx-Paula.pem ubuntu@18.196.193.125
+   90  history >> history23052023.txt
+   91  git add README.md
+   92  git commit -m "Dokumentation bearbeitet"
+   93  git push
+   94  git status
+   95  git add -A
+   96  git commit -m "Commit Paula Menski 23.05.2023"
+   97  git status
+   98  git push
+   99  git status
+  100  ssh -i Nginx-paula.pem ubuntu@52.57.253.121
+  101  ssh -i Nginx-paula.pem ubuntu@18.184.80.255
+  102  ssh -i Nginx-paula.pem ubuntu@52.57.253.121
+  103  cd Praktikum/Praktikum-Paula/
+  104  ssh -i Nginx-paula.pem ubuntu@52.57.253.121
+  105  ssh -i Nginx-paula.pem ubuntu@18.184.80.255
+  106  ssh -i Nginx-Paula.pem ubuntu@52.57.253.121
+  107  cd ..
+  108  mikdir Praktikum-Menski
+  109  mkdir Praktikum-Menski
+  110  aws ec2 describe-images
+  111  which git
+  112  git --version
+  113  touch README.md
+  114  rm README.md 
+  115  cd Praktikum-Menski/
+  116  aws ec2 describe-images
+  117  which git
+  118  git --version
+  119  touch README.md
+  120  aws ec2 authorize-security-group-ingress --group-id sg-016907f268702a19b --protocol tcp --port 80 --cidr 0.0.0.0/0
+  121  aws ec2 create-key-pair --key-name Menski-Schluessel --query 'KeyMaterial' --output text | out-file -encoding ascii -filepath Menski.pem
+  122  aws ec2 create-key-pair --key-name MenskiSchluessel --query 'KeyMaterial' --output text | out-file -encoding ascii -filepath Menski.pem
+  123  aws ec2 describe-key-pairs  --key-name MenskiSchluessel
+  124  docker --version
+  125  aws ec2 run-instances --image-id ami-0ec7f9846da6b0f61 --count 1 --instance-type t2.micro --key-name MenskiSchluessel --security-groups paux-sg
+  126  find MenskiSchluessel.pem
+  127  find MenskiSchluessel
+  128  ls -lah
+  129  chmod 400 MenskiSchluessel.pem
+  130  MenskiSchluessel
+  131  chmod 400 MenskiSchluessel.pem
+  132  aws ec2 describe-key-pairs  --key-name MenskiSchluessel
+  133  chmod 400 Menski.pem
+  134  aws ec2 create-key-pair --key-name MenskiSchluessel --query 'KeyMaterial' --output text | out-file -encoding ascii -filepath Menski.pem
+  135  find Menski.pem
+  136  find *.pem
+  137  cd
+  138  find Menski.pem
+  139  find *.pem
+  140  cd ..
+  141  find *.pem
+  142  cd ..
+  143  find *.pem
+  144  find help
+  145  man find
+  146  find Prak*
+  147  man find 
+  148  find ./*.pem
+  149  find /*.pem
+  150  cd home
+  151  ls 
+  152  cd ec2-user/
+  153  cd environment/
+  154  cd Praktikum/
+  155  cd Praktikum-Menski/
+  156  aws ec2 create-key-pair --key-name MenskiSchluessel --query 'KeyMaterial' --output text | out-file  Menski.pem
+  157  aws ec2 create-key-pair --key-name MenskiS --query 'KeyMaterial' --output text > MenskiS.pem
+  158  aws ec2 create-security-group --group-name pau-sg --description "Sicherheitsgruppe fuer EC2Menski"
+  159  aws ec2 run-instances --image-id ami-0ec7f9846da6b0f61 --count 1 --instance-type t2.micro --key-name MenskiS --security-groups pau-sg 
+  160  chmod 400 MenskiS.pem
+  161  ssh -i MenskiS.pem ubuntu@3.121.219.247
+  162  ssh -i MenskiS.pem ubuntu@ec2-3-121-219-247.eu-central-1.compute.amazonaws.com
+  163  aws ec2 authorize-security-group-ingress --group-id sg-0067084518b47dca3 --protocol tcp --port 22 --cidr 0.0.0.0/0 
+  164  aws ec2 authorize-security-group-ingress --group-id sg-0067084518b47dca3 --protocol tcp --port 80 --cidr 0.0.0.0/0 
+  165  ssh -i MenskiS.pem ubuntu@ec2-3-121-219-247.eu-central-1.compute.amazonaws.com
+  166  cd ..
+  167  git status
+  168  cd Praktikum-Paula/
+  169  git status
+  170  cd 
+  171  install Monica
+  172  cd environment/Praktikum/Praktikum-Paula/
+  173  git status
+  174  git add -README.md
+  175  git add README.md
+  176  git commit -m "Dokumentation bearbeitet"
+  177  git push
+  178  cd
+  179  cd environment/Praktikum/Praktikum-Menski/
+  180  git status
+  181  cd
+  182  cd Praktikum/
+  183  cd Praktikum-Paula/
+  184  cd..
+  185  cd ..
+  186  cd Praktikum-Menski/
+  187  git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/Praktikum-Paula
+  188  cd Praktikum-Paula/
+  189  ssh -T git@github.com
+  190  git remote add origin "git@github.com:Hakaja/Praktikum-Paula.git"
+  191  git push -u origin master
+  192  git remote add origin https://github.com/Hakaja/Praktikum-Paula.git
+  193   git branch -M main 
+  194  git push -u origin main
+  195  cd
+  196  cd environment/
+  197  cd P
+  198  cd Praktikum/
+  199  cd Praktikum-Paula/
+  200  cd Praktikum/
+  201  cd Praktikum-Menski/
+  202  cd
+  203  cd environment/
+  204  aws configure set default.region eu-west-2
+  205  aws ec2 describe-images
+  206  cd Praktikum/Praktikum-Menski/Praktikum-Paula/
+  207  git init
+  208  git add .
+  209  git commit -m "erster Test"
+  210  git config --global user.name "Paula Menski"
+  211  git config --global user.email "paula.menski@gmx.de"
+  212  git remote addorigin git@git@github.com:Hakaja/Praktikum-Paula.git
+  213  git remote add origin git@git@github.com:Hakaja/Praktikum-Paula.git
+  214  git add .
+  215  git branch -M main
+  216  git push -u orgigin main
+  217  ssh -T git@github.com
+  218  ssh -i Nginx-Paula.pem ubuntu@18.196.50.216
+  219  cd
+  220  cd environment/
+  221  git clone https://github.com/Hakaja/Praktikum-Paula.git
+  222  git clone https://github.com/Hakaja/AWSCloud9.git
+  223  cd AWSCloud9/
+  224  git config --global credential.helper store
+  225  git add --all
+  226  git status
+  227  git commit -m "Test"
+  228  git clone https://eu-central-1.console.aws.amazon.com/codesuite/codecommit/repositories/Praktikum-Paula/browse?region=eu-central-1
+  229  ls -lah
+  230  git clone ssh://git-codecommit.eu-central-1.amazonaws.com/v1/repos/Praktikum-Paula
+  231  git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/Praktikum-Paula
+  232  git config --global credential.helper store
+  233  git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/Praktikum-Paula
+  234  ssh -T git@github.com
+  235  git remote add origin git@github.com:Hakaja/AWSCloud9.git
+  236  git add -a
+  237  git add -all
+  238  git add --all
+  239  git commit -m "erstes Test Commit"
+  240  git push
+  241  cd
+  242  cd environment/Praktikum/Praktikum-Paula
+  243  git add -all
+  244  git add -A
+  245  git commit -m "Dokumentation bearbeitet"
+  246  git push
+  247  cd AWSCloud9/
+  248  git remote add origin https://github.com/Hakaja/AWSCloud9.git
+  249   git branch -M main 
+  250  git push -u origin main
+  251  cd ..
+  252  ls 
+  253  cd.. 
+  254  cd ..
+  255  ls 
+  256  cd ..
+  257  cd .ssh
+  258  cd ssh
+  259  ls 
+  260  ls -lah
+  261  ssh-keygen
+  262  cd home
+  263  cd ec2-user/
+  264  ls
+  265  ls -lah
+  266  cd .ssh 
+  267  ls
+  268  cat id_rsa.pub 
+  269  cat id_rsa.pub >> authorized_keys 
+  270  cat authorized_keys 
+  271  cd ..
+  272  cd environment/
+  273  cd AWSCloud9/
+  274  rm -rf .git 
+  275  git config --global user.name "Paula Menski" && git config --global user.email "paula.menski@gmx.de"
+  276  git init
+  277  ssh -T git@github.com
+  278  git remote add origin git@github.com:Hakaja/AWS-Doc.git 
+  279  git push -u origin master
+  280  git push -u origin main
+  281  git push -u origin public
+  282  git push -u origin master
+  283  git push -u origin public
+  284  rm -rf .git
+  285  cd ..
+  286  ls 
+  287  ls -lah
+  288  cd .ssh
+  289  cat id_rsa.pub 
+  290  cd ..
+  291  cd environment/
+  292  cd AWSCloud9/
+  293  git config --global user.name "Paula Menski" && git config --global user.email paula.menski@gmx.de
+  294  git init
+  295  ssh -T git@github.com
+  296  git remote add origin git@github.com:Hakaja/AWS.git
+  297  git push -u origin master
+  298  git push -u origin main
+  299  git push -u origin master
+  300  git push -u origin 
+  301  git push -u origin main 
+  302  git --set-upstream  origin main 
+  303  git --set-upstream  origin master
+  304  git push --set-upstream origin master
+  305  git push --set-upstream origin main
+  306  git pull
+  307  git checkout -b master
+  308  git push origin master
+  309  git push 
+  310  git add -A
+  311  git commit -m "Akktualisierung 26.05.23"
+  312  git push
+  313  git push --set-upstream origin master
+  314  git push
+  315  git remote add origin git@github.com:Hakaja/AWS.git
+  316  git push -u origin main 
+  317  git push -u origin master
+  318  git pull
+  319  git checkout -b main
+  320  git push -u origin main
+  321  git push 
+  322  git add - A
+  323  git add -A
+  324  git push 
+  325  git pull
+  326  git checkout -b Public
+  327  git push -u origin Public
+  328  git add -A
+  329  git commit -m "Akktualisierung 26.05.23"
+  330  git push 
+  331  git add -A
+  332  git commit -m "Neu"
+  333  git push 
+  334  git add -A
+  335  git commit -m "Neu"
+  336  git push 
+  337  history >> history26052013.txt

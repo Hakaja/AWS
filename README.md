@@ -30,7 +30,7 @@ Klonen des Repositorys mit CodeCommit:
     git config --global user.email "paula.menski@disroot.com"
     git init
     
-SSH PublicKey in Github Profil hinzufügen, danach Repo erstellenund SSH-URL Kopieren:
+SSH PublicKey in Github Profil hinzufügen, danach Repo erstellen und SSH-URL Kopieren:
 
     ssh -T git@github.com
     git remote add origin "SSH-URL"
@@ -67,7 +67,7 @@ Falls man sich mit anderem Server und/oder GitHub verbinden möchten, muss man f
     cat ~/.ssh/id_rsa.pub
   
   
-## sichern und härten des OpenSSH-Servers  
+## sichern des OpenSSH-Servers  
 [Tecmint](https://www.tecmint.com/secure-openssh-server)  
 [Cyberciti](https://www.cyberciti.biz/tips/linux-unix-bsd-openssh-server-best-practices.html)  
 
@@ -95,7 +95,7 @@ Eingabe Taste x3
 Detailliertere Anweisungen findet man in der Dokumentation: 
 [mehr Anzeigen](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-gc.html?icmpid=docs_acc_console_connect_np)
 
-# Erstellen einer EC2-Instanz mit NGINX + AWS-CLI (23.052023)
+# Erstellen einer EC2-Instanz mit NGINX + AWS-CLI 
 1. Erstellen Sie eine t.2micro EC2-Instanz mit Ubuntu 22.04 als Betriebssystem
 2. Erstellen Sie ein Skript, das alle Pakete aktualisiert, NGINX installiert und den Dienst startet
 3. Stellen Sie sicher, dass NGINX auf der Instanz ausgeführt wird
@@ -197,7 +197,7 @@ Berechtigungen vom Schlüsselpaar ändern
   
 [APT Cheat Sheet](https://opensource.com/sites/default/files/gated-content/osdc_cheatsheet-apt-2021.5.30.pdf)  
 
-# Einrichten einer Webseite unter Nginx und Linux (Ubuntu & Debian) (24.05.2023)  
+# Einrichten einer Webseite unter Nginx und Linux (Ubuntu & Debian)  
 
 Detailliertere Anweisungen findet man in der Dokumentation: 
 [mehr Anzeigen](http://flsilva.com/blog/how-to-configure-a-website-on-nginx-and-linux-tutorial/)  
@@ -209,21 +209,29 @@ Der Hauptunterschied zwischen einem Reverse-Proxy und einem Forward-Proxy besteh
 [Schaubild](http://www.celinio.net/techblog/wp-content/uploads/2011/09/ReverseProxy.jpg)  
 [mehr Anzeigen](https://www.theserverside.com/feature/Forward-proxy-vs-reverse-proxy-Whats-the-difference)  
 
-## Zusammenfassung eine VPC, ein öffentliches Subnetz, ein privates Subnetz, ein NAT-Gateway, eine Routing-Tabelle, eine Sicherheitsgruppe und eine EC2-Instanz erstellen  
+## Zusammenfassung  
+eine VPC, ein öffentliches Subnetz, ein privates Subnetz, ein NAT-Gateway, eine Routing-Tabelle, eine Sicherheitsgruppe und eine EC2-Instanz erstellen  
 [mehr Anzeigen](https://dev.to/mkabumattar/how-to-create-an-aws-ec2-instance-using-aws-cli-32ek)   
   
 ## Partitionierung 
-/EFI = 300 Mb -> Format: FAT32/vFAT
-/boot = bis 512 Mb -> ext2/3/4
-/swap = 1 Gb RAM -> 2 Gb
-        2 Gb RAM -> 4 Gb
-        4 Gb RAM -> 2 Gb
-        12 Gb RAM -> kein swap
-/   = ab 50 Gb
+/EFI = 300 Mb -> Format: FAT32/vFAT  
+
+/boot = bis 512 Mb -> ext2/3/4  
+
+/swap = 1 Gb RAM -> 2 Gb  
+
+2 Gb RAM -> 4 Gb   
+
+4 Gb RAM -> 2 Gb  
+
+12 Gb RAM -> kein swap
+/   = ab 50 Gb  
+
 /home = was ihr möchtet / den Rest der Partition  
   
-  
-[Was ist eine AWS Availability Zone?](https://www.techtarget.com/searchcloudcomputing/tip/Understand-AWS-Regions-vs-Availability-Zones)    
+## Was ist eine AWS Availability Zone?  
+
+[mehr Anzeigen](https://www.techtarget.com/searchcloudcomputing/tip/Understand-AWS-Regions-vs-Availability-Zones)    
   
   
 ## Was ist eine AWS-Region?
