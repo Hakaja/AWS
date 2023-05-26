@@ -233,3 +233,4 @@ Eine AWS-Region ist ein Cluster von Rechenzentren in einem bestimmten geografisc
 Jede AWS-Region umfasst mehrere AZs. Allerdings ist jede AZ auf eine bestimmte AWS-Region beschränkt. Sie können mehrere AZs innerhalb einer Region verwenden, Sie können jedoch nicht dieselbe AZ in mehreren Regionen verwenden.  
   
 ---  
+Paula Menski
