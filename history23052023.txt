@@ -1,0 +1,90 @@
+    1  mkdir Praktikum && cd Praktikum
+    2  aws ec2 describe-images
+    3  which git 
+    4  git --version
+    5  touch README.md
+    6      git config --global user.name "Mary Major"
+    7      git config --global user.name "Paula Menski"
+    8      git config --global user.email "paula.menski@disroot.com"
+    9  cd Praktikum/
+   10      git config --global user.name "Paula Menski"
+   11      git config --global user.email "paula.menski@disroot.com"
+   12  git config --global credential.helper '!aws codecommit credential-helper $@'
+   13  git config --global credential.UseHttpPath true
+   14  git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/Praktikum-Paula
+   15  cd Praktikum-Paula/
+   16  cd ..
+   17  mv README.md Praktikum-Paula/
+   18  ls
+   19  cd Praktikum-Paula/
+   20  ls -lah
+   21  git status
+   22  git add READ.md
+   23  git add README.md
+   24  git add READ.md
+   25  git status
+   26  git commit -m "Erstes Commit"
+   27  git status
+   28  git push
+   29  cd ..
+   30  ls -lah
+   31  cd Praktikum-Paula/
+   32  git log
+   33  git remote add origin
+   34  git push
+   35  cd
+   36  cd environment/Praktikum/Praktikum-Paula/
+   37  git add -Add
+   38  git commit -m "Dokumentation bearbeitet"
+   39  git push
+   40  git add README.md
+   41  git commit -m "Dokumentation bearbeitet"
+   42  git push
+   43  git add README.md
+   44  git commit -m "Dokumentation bearbeitet"
+   45  git push
+   46  git add README.md
+   47  git commit -m "Dokumentation bearbeitet"
+   48  git push
+   49  history
+   50  cd Praktikum/
+   51  cd Praktikum-Paula/
+   52  git add README.md
+   53  git commit -m "Dokumentation bearbeitet"
+   54  git push
+   55  cd ..
+   56  git add README.md
+   57  cd Praktikum-Paula/
+   58  cd Praktikum/
+   59  cd Praktikum-Paula/
+   60  git add README.md
+   61  git commit -m "Dokumentation bearbeitet"
+   62  git push
+   63  cd
+   64  cd environment/
+   65  cd Praktikum/
+   66  cd Praktikum-Paula/
+   67   aws ec2 create-key-pair --key-name MyTestKey --query 'KeyMaterial' --output text | out-file -encoding ascii -filepath MyTestKey.pem
+   68  aws ec2 create-key-pair --key-name MyTestKey --query 'KeyMaterial' --output text | out-file -encoding ascii -filepath MyTestKey.pem
+   69  aws ec2 create-key-pair --key-name MyTestKey --query 'KeyMaterial' --output text | out-file -encoding ascii -filepath MyTestKey1.pem
+   70  [08:55] Renato Palavecino
+   71  aws ec2 create-key-pair --key-name MyTestKey --query 'KeyMaterial' --output text > MyTestKey.pem
+   72  [08:55] Renato Palavecino
+   73  aws ec2 create-key-pair --key-name MyTestKey --query 'KeyMaterial' --output text > MyTestKey.pem
+   74* aws ec2 describe-key
+   75  aws ec2 describe-key-pairs 
+   76  aws ec2 create-key-pair --key-name Nginx-Paula --query 'KeyMaterial' --output text > Nginx-Paula.pem
+   77  aws ec2 describe-key-pairs 
+   78  aws ec2 describe-key-pairs  --key-name Nginx-Paula
+   79  aws ec2 create-security-group --group-name paux-sg --description "Sicherheitsgruppe fuer EC2Nginx"
+   80  aws ec2 authorize-security-group-ingress --group-id sg-016907f268702a19b --protocol tcp --port 80 --cidr 0.0.0.0/0
+   81  aws ec2 authorize-security-group-ingress --group-id sg-016907f268702a19b --protocol tcp --port 22 --cidr 0.0.0.0/0
+   82  aws ec2 describe-security-groups --group-ids sg-016907f268702a19b
+   83  touch nginxscript.sh
+   84  aws ec2 run-instances --image-id ami-0ec7f9846da6b0f61 --count 1 --instance-type t2.micro --key-name Nginx-Paula --security-groups paux-sg --user-data file://nginxscript.sh
+   85  ssh -i Nginx-Paula.pem ubuntu@18.196.193.125
+   86  ls -lah Nginx-Paula.pem 
+   87  chmod 400 Nginx-Paula.pem 
+   88  ls -lah Nginx-Paula.pem 
+   89  ssh -i Nginx-Paula.pem ubuntu@18.196.193.125
+   90  history >> history23052023.txt
